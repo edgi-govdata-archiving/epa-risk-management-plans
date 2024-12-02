@@ -37,13 +37,13 @@ The list of states and territories was gathered from the EPA website, by inspect
 
 ### Downloading the Excel files
 
-The script `rmp_excel_by_state.py` did a search for each state and downloaded the Excel file. The Excel files are in the top level of the `reports` directory. For example, here is the file for Michigan: [`reports/Michigan.xls`](reports/Michigan.xls).
+The script [`rmp_excel_by_state.py`](rmp_excel_by_state.py) did a search for each state and downloaded the Excel file. The Excel files are in the top level of the `reports` directory. For example, here is the file for Michigan: [`reports/Michigan.xls`](reports/Michigan.xls).
 
 This script runs relatively quickly, and completes in under an hour.
 
 ### Downloading the RMPs
 
-The script `rmp.py` reads the Excel files and downloads the RMPs. It does this by doing a search on the EPA website for each facility. The RMPs are in the `reports` directory. They are downloaded into a directory for the state. For example, here is the RMP for the facility with RMP number 100000002043: [`reports/michigan/100000002043.pdf`](reports/michigan/100000002043.pdf).
+The script [`rmp.py`](rmp.py) reads the Excel files and downloads the RMPs. It does this by doing a search on the EPA website for each facility. The RMPs are in the `reports` directory. They are downloaded into a directory for the state. For example, here is the RMP for the facility with RMP number 100000002043: [`reports/michigan/100000002043.pdf`](reports/michigan/100000002043.pdf).
 
 This script takes a long time to run. It took several days to download all the RMPs. The script is designed to be able to be restarted, so if it fails, it can be restarted without losing all the work. It is also designed to be able to be run in parallel, so that multiple instances can be run at the same time. On my machine, I ran 2 instances at the same time; more than this, and I ran into problems: perhaps due to memory on my machine, and perhaps due to limitations on the EPA website.
 
