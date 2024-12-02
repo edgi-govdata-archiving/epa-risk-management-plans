@@ -51,7 +51,7 @@ This script takes a long time to run. It took several days to download all the R
 
 There are a few other scripts in the repository:
 
-- [`rmp_stats.py`](rmp_stats.py) generates the statistics in the [`stats.md`](stats.md) file.
+- [`report_stats.py`](report_stats.py) generates the statistics in the [`stats.md`](stats.md) file.
 - [`xls_to_sqlite.py`](xls_to_sqlite.py) converts the Excel files to a SQLite database. This is useful for querying the data.
 - [`percent_complete.py`](percent_complete.py) shows the status of the RMP downloads.
 - [`make_index_md.py`](make_index_md.py) was an attempt to generate an index of the RMPs. But the files are too large to be useful. The Excel files are the best way to look at individual states.
