@@ -11,3 +11,6 @@ wheels/
 
 # macOS-generated files
 .DS_Store
+
+# The sqlite3 database file
+*.db
