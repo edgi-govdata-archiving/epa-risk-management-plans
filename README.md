@@ -1,9 +1,9 @@
-# Collecting RMP (Risk Management Plan) data from the EPA website.
+# EPA RMP (Risk Management Plan) Reports
 
 An experiment  
 Will Fitzgerald, 2024/12
 
-## Current EPA system (as of 2024/12).
+## Current EPA system (as of 2024/12)
 
 The EPA website provides a search tool to find RMP data for a specific facility. The search tool is located at the following URL: https://cdxapps.epa.gov/olem-rmp-pds/. The search tool allows users to search for RMP data by a variety of criteria.
 
@@ -23,7 +23,34 @@ Based on the Excel files the total Number of RMPs is 21,563. A few of the RMPs a
 
 Basic descriptive statistics are available in the [`stats.md`](stats.md) file.
 
-## Data Collection
+## Using this data
+
+You can download this data to your computer by downloading a ZIP file, using the GitHub Desktop app, or by using the command line.
+
+### Downloading a ZIP file
+
+You can download a ZIP file of the repository from GitHub, from this [the repository link](https://github.com/edgi-govdata-archiving/epa-risk-management-plans/archive/refs/heads/main.zip).
+
+### Using the GitHub Desktop app
+
+1. Create a GitHub account (if you don't already have one) at [GitHub](https://github.com).
+2. Download the GitHub Desktop app to your computer at [GitHub Desktop](https://desktop.github.com).
+3. Clone the repository to your computer using the GitHub Desktop app. The repository is located at [edgi-govdata-archiving/epa-risk-management-plans](https://github.com/edgi-govdata-archiving/epa-risk-management-plans). See the following screenshot for how to do this:
+   1. Sign in to your GitHub account.
+      ![Sign in to your Account](static/signin.png)
+   2. Press the "Clone a repository from the Internet..." button.
+      ![Press the "Clone a repository from the Internet..." button](static/clone.png)
+   3. Enter the repo and local path, and press "Clone".
+      ![Enter the repo and local path](static/enter-repo-name.png)
+
+### Using the command line
+
+1. Use the `git` command to clone the repository to your computer. For example:
+   ```bash
+   git clone git@github.com:edgi-govdata-archiving/epa-risk-management-plans.git
+   ```
+
+## How this data was collected
 
 The data collection consisted of three steps:
 
